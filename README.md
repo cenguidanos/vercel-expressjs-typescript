@@ -43,3 +43,7 @@ vercel dev --listen 8080
 This commmand prevents deploy dev and preview mode when push to repo.
 
 - **Command**: `bash script.sh`
+
+#### 7. Push to your repository!
+
+This project is builded on local on pre-commit hook.
