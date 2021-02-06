@@ -1,0 +1,35 @@
+{
+	"name": "vercel-expressjs-typescript",
+	"version": "1.0.0",
+	"author": "Cristian Enguídanos Nebot <53697395+cenguidanos@users.noreply.github.com>",
+	"license": "MIT",
+	"scripts": {
+		"build": "tsc",
+		"lint": "eslint --quiet --env-info --ext .ts --fix .",
+		"format": "prettier --config .prettierrc --write ./**/*.ts"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "yarn lint && yarn format && git add ."
+		}
+	},
+	"dependencies": {
+		"@vercel/node": "^1.9.0",
+		"cors": "2.8.5",
+		"express": "4.17.1",
+		"helmet": "4.4.1"
+	},
+	"devDependencies": {
+		"@types/cors": "2.8.9",
+		"@types/express": "4.17.11",
+		"@types/node": "14.14.25",
+		"@typescript-eslint/eslint-plugin": "4.14.2",
+		"@typescript-eslint/parser": "4.14.2",
+		"eslint": "7.19.0",
+		"eslint-config-prettier": "7.2.0",
+		"eslint-plugin-prettier": "3.3.1",
+		"husky": "4.3.8",
+		"prettier": "2.2.1",
+		"typescript": "^4.1.3"
+	}
+}
