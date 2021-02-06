@@ -6,7 +6,7 @@ import WelcomeController from '../../lib/v1/controllers/welcome.controller'
 
 // App entry point
 const app = express()
-const APP_PREFIX = '/api/v1'
+const APP_PREFIX = '/v1'
 
 // Use middlewares
 app.use(helmet())
