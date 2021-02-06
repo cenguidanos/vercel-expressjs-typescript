@@ -1,8 +1,9 @@
 import express from 'express'
 import helmet from 'helmet'
+import cors from 'cors'
 
-import UsersController from '../../lib/v1/controllers/user.controller'
-import WelcomeController from '../../lib/v1/controllers/welcome.controller'
+import HelloRouter from '../../lib/v1/hello/hello.router'
+import UsersRouter from '../../lib/v1/users/users.router'
 
 // App entry point
 const app = express()
@@ -10,10 +11,13 @@ const APP_PREFIX = '/v1'
 
 // Use middlewares
 app.use(helmet())
+app.use(cors())
 
-// Use controllers
-app.use(APP_PREFIX + '/', WelcomeController)
-app.use(APP_PREFIX + '/users', UsersController)
+// Use routers
+app.use(APP_PREFIX + '/', HelloRouter)
+app.use(APP_PREFIX + '/users', UsersRouter)
+
+app.get('*', (_req, res) => res.redirect('/404'))
 
 // Export to Vercel Serverless
 export default app

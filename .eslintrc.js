@@ -18,6 +18,7 @@ module.exports = {
 		sourceType: 'module'
 	},
 	rules: {
+		'@typescript-eslint/no-empty-function': 'off',
 		'@typescript-eslint/explicit-function-return-type': 'off',
 		'prettier/prettier': 'error',
 		'@typescript-eslint/no-var-requires': 'off',

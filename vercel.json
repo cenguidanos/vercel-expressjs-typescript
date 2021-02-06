@@ -1,7 +1,8 @@
 {
 	"public": false,
+	"redirects": [{ "source": "/", "destination": "/v1", "permanent": true }],
 	"rewrites": [
 		{ "source": "/v1(.*)", "destination": "/api/v1" },
-		{ "source": "/(.*)", "destination": "/api/404" }
+		{ "source": "/(.*)", "destination": "/404" }
 	]
 }
