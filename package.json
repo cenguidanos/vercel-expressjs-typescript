@@ -4,13 +4,12 @@
 	"author": "Cristian Enguídanos Nebot <53697395+cenguidanos@users.noreply.github.com>",
 	"license": "MIT",
 	"scripts": {
-		"build": "tsc",
 		"lint": "eslint --quiet --env-info --ext .ts --fix .",
 		"format": "prettier --config .prettierrc --write ./**/*.ts"
 	},
 	"husky": {
 		"hooks": {
-			"pre-commit": "yarn lint && yarn format && git add ."
+			"pre-commit": "yarn lint && yarn format && tsc && git add ."
 		}
 	},
 	"dependencies": {
