@@ -10,6 +10,7 @@ Template for deploy expressjs server on Vercel with Typescript
 - :hibiscus: Prettier
 - :ocean: Typescript
 - :zap: Express.js
+- :wolf: Husky
 
 #### 1. Install dependencies
 
