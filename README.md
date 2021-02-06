@@ -2,7 +2,7 @@
 
 Template for deploy expressjs server on Vercel with Typescript
 
-:balloon: **Demo**:
+:balloon: **Demo**: [go!](https://expressjs-typescript.vercel.app)
 
 #### Stack
 
