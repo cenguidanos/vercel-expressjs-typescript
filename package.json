@@ -6,7 +6,7 @@
 	"scripts": {
 		"lint": "eslint --quiet --env-info --ext .ts --fix .",
 		"format": "prettier --config .prettierrc --write ./**/*.ts",
-		"precommit": "tsc && yarn lint && yarn format && git add ."
+		"precommit": "yarn lint && yarn format && git add ."
 	},
 	"husky": {
 		"hooks": {
