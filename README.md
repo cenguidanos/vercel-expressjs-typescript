@@ -1,14 +1,16 @@
-# Vercel - Express - Typescript
+# Vercel - Express - Typescript - Deno
 
-Template for deploy expressjs server on Vercel with Typescript
+Template for deploy expressjs server on Vercel with Typescript and Deno
 
-:balloon: **Demo**: [go!](https://expressjs-typescript.vercel.app/v1) + `/users`
+:balloon: **Demo Express**: [go!](https://expressjs-typescript.vercel.app/v1) + `/users`
+:balloon: **Demo Deno Server**: [go!](https://expressjs-typescript.vercel.app/v2)
 
 #### Stack
 
 - :dizzy: ESLint
 - :hibiscus: Prettier
 - :ocean: Typescript
+- :ocean: Deno
 - :zap: Express.js
 - :wolf: Husky
 

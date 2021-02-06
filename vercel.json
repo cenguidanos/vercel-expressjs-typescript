@@ -1,8 +1,17 @@
 {
 	"public": false,
-	"redirects": [{ "source": "/", "destination": "/v1", "permanent": true }],
+	"functions": {
+		"api/v1/index.ts": {
+			"runtime": "@vercel/node@1.9.0"
+		},
+		"api/v2/index.ts": {
+			"runtime": "vercel-deno@0.7.6"
+		}
+	},
+	"redirects": [{ "source": "/", "destination": "/404", "permanent": true }],
 	"rewrites": [
 		{ "source": "/v1(.*)", "destination": "/api/v1" },
+		{ "source": "/v2(.*)", "destination": "/api/v2" },
 		{ "source": "/(.*)", "destination": "/404" }
 	]
 }
