@@ -2,11 +2,15 @@
 
 Template for deploy expressjs server on Vercel with Typescript, Deno aand Rust
 
-:balloon: **Demo Express Server**: [go!](https://expressjs-typescript.vercel.app/v1) + `/users`
+:balloon: **Demo Express Server**: [go!](https://expressjs-typescript.vercel.app/v1)
+
+:balloon: **Demo Express fectch users**: [go!](https://expressjs-typescript.vercel.app/v1/users)
 
 :balloon: **Demo Deno Handler**: [go!](https://expressjs-typescript.vercel.app/v2)
 
-:balloon: **Demo Rust Handler**: [go!](https://expressjs-typescript.vercel.app/v3)
+:balloon: **Demo Rust JSON**: [go!](https://expressjs-typescript.vercel.app/v3)
+
+:balloon: **Demo Rust random number**: [go!](https://expressjs-typescript.vercel.app/v3/random)
 
 #### Stack
 
@@ -15,14 +19,14 @@ Template for deploy expressjs server on Vercel with Typescript, Deno aand Rust
 - :zap: Express.js
 - :wolf: Husky
 - :ocean: Typescript
-- :ocean: Deno
-- :ocean: Rust
+- :ocean: Deno with [vercel-deno](https://github.com/TooTallNate/vercel-deno)
+- :ocean: Rust with [now-rust](https://github.com/mike-engel/now-rust)
 
 #### 0. Previous
 
-You need Deno installed in your machine. Go to [Denoland](https://deno.land/#installation) page.
+You need **Deno** installed in your machine. See [Denoland](https://deno.land/#installation) page.
 
-You need Rust installed in your machine. Go to [Rustlang](https://www.rust-lang.org/tools/install) page.
+You need **Rust** installed in your machine. See [Rustlang](https://www.rust-lang.org/tools/install) page.
 
 #### 1. Install dependencies
 

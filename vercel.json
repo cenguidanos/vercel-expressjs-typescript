@@ -7,15 +7,19 @@
 		"api/v2/**/*.ts": {
 			"runtime": "vercel-deno@0.7.6"
 		},
-		"api/v3/**/*.rs": {
+		"api/v3/json/index.rs": {
+			"runtime": "now-rust@2.0.4"
+		},
+		"api/v3/random/index.rs": {
 			"runtime": "now-rust@2.0.4"
 		}
 	},
 	"rewrites": [
 		{ "source": "/", "destination": "/404" },
 		{ "source": "/v1(.*)", "destination": "/api/v1" },
-		{ "source": "/v2(.*)", "destination": "/api/v2" },
-		{ "source": "/v3(.*)", "destination": "/api/v3" },
+		{ "source": "/v2", "destination": "/api/v2" },
+		{ "source": "/v3", "destination": "/api/v3/json" },
+		{ "source": "/v3/random", "destination": "/api/v3/random" },
 		{ "source": "/(.*)", "destination": "/404" }
 	]
 }

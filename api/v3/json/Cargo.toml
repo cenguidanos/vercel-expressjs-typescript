@@ -1,0 +1,21 @@
+[package]
+name = "json"
+version = "0.1.0"
+authors = [
+  "Cristian Enguídanos Nebot <53697395+cenguidanos@users.noreply.github.com>"
+]
+edition = "2018"
+
+[dependencies]
+now_lambda = "*"
+serde = "*"
+serde_json = "*"
+serde_derive = "*"
+
+[lib]
+name = "parse"
+path = "lib/parse.rs"
+
+[[bin]]
+name = "index"
+path = "C:\\Users\\Desarrollo\\Desktop\\Repositorios\\templates\\vercel-expressjs-typescript-deno\\api\\v3\\json\\index.rs"

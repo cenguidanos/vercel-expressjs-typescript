@@ -1,6 +1,6 @@
 # Cargo
-api/v3/target
-/**/*.toml.backup
+target/
+*.toml.backup
 
 # Logs
 logs

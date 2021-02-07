@@ -1,0 +1,19 @@
+[package]
+name = "random"
+version = "0.1.0"
+authors = [
+  "Cristian Enguídanos Nebot <53697395+cenguidanos@users.noreply.github.com>"
+]
+edition = "2018"
+
+[dependencies]
+now_lambda = "*"
+rand = "0.8.3"
+
+[lib]
+name = "util"
+path = "lib/util.rs"
+
+[[bin]]
+name = "index"
+path = "C:\\Users\\Desarrollo\\Desktop\\Repositorios\\templates\\vercel-expressjs-typescript-deno\\api\\v3\\random\\index.rs"
