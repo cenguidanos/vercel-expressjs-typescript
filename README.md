@@ -14,6 +14,10 @@ Template for deploy expressjs server on Vercel with Typescript and Deno
 - :zap: Express.js
 - :wolf: Husky
 
+#### 0. Previous
+
+You need Deno installation in your machine. Go to [Denoland](https://deno.land/#installation) page.
+
 #### 1. Install dependencies
 
 ```bash
