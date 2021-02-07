@@ -1,17 +1,21 @@
 {
 	"public": false,
 	"functions": {
-		"api/v1/index.ts": {
+		"api/v1/**/*.ts": {
 			"runtime": "@vercel/node@1.9.0"
 		},
-		"api/v2/index.ts": {
+		"api/v2/**/*.ts": {
 			"runtime": "vercel-deno@0.7.6"
+		},
+		"api/v3/**/*.rs": {
+			"runtime": "now-rust@2.0.4"
 		}
 	},
 	"rewrites": [
 		{ "source": "/", "destination": "/404" },
 		{ "source": "/v1(.*)", "destination": "/api/v1" },
 		{ "source": "/v2(.*)", "destination": "/api/v2" },
+		{ "source": "/v3(.*)", "destination": "/api/v3" },
 		{ "source": "/(.*)", "destination": "/404" }
 	]
 }

@@ -1,4 +1,5 @@
 import express from 'express'
+import type { Request, Response } from 'express'
 import helmet from 'helmet'
 import cors from 'cors'
 
@@ -17,7 +18,7 @@ app.use(cors())
 app.use(APP_PREFIX + '/', HelloRouter)
 app.use(APP_PREFIX + '/users', UsersRouter)
 
-app.get('*', (_req, res) => res.redirect('/'))
+app.get('*', (_req: Request, res: Response) => res.redirect('/'))
 
 // Export to Vercel Serverless
 export default app

@@ -1,46 +1,45 @@
-# Vercel - Express - Typescript - Deno
+# Vercel - Express - Typescript - Deno - Rust
 
-Template for deploy expressjs server on Vercel with Typescript and Deno
+Template for deploy expressjs server on Vercel with Typescript, Deno aand Rust
 
-:balloon: **Demo Express Typescript**: [go!](https://expressjs-typescript.vercel.app/v1) + `/users`
+:balloon: **Demo Express Server**: [go!](https://expressjs-typescript.vercel.app/v1) + `/users`
 
-:balloon: **Demo Deno Server**: [go!](https://expressjs-typescript.vercel.app/v2)
+:balloon: **Demo Deno Handler**: [go!](https://expressjs-typescript.vercel.app/v2)
+
+:balloon: **Demo Rust Handler**: [go!](https://expressjs-typescript.vercel.app/v3)
 
 #### Stack
 
 - :dizzy: ESLint
 - :hibiscus: Prettier
-- :ocean: Typescript
-- :ocean: Deno
 - :zap: Express.js
 - :wolf: Husky
+- :ocean: Typescript
+- :ocean: Deno
+- :ocean: Rust
 
 #### 0. Previous
 
 You need Deno installed in your machine. Go to [Denoland](https://deno.land/#installation) page.
 
+You need Rust installed in your machine. Go to [Rustlang](https://www.rust-lang.org/tools/install) page.
+
 #### 1. Install dependencies
 
 ```bash
-yarn
-```
-
-#### 2. Install **@vercel/cli**
-
-```bash
-npm i -g @vercel/cli
+npm i
 ```
 
 #### 3. Login on Vercel from CLI
 
 ```bash
-vercel login
+npm run vercel login
 ```
 
 #### 4. Create project on Vercel with **defaults**
 
 ```bash
-vercel dev --listen 8080
+npm run vercel dev --listen=8080
 ```
 
 #### 5. Allow **git** integration on Vercel project settings
