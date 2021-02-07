@@ -2,7 +2,8 @@
 
 Template for deploy expressjs server on Vercel with Typescript and Deno
 
-:balloon: **Demo Express**: [go!](https://expressjs-typescript.vercel.app/v1) + `/users`
+:balloon: **Demo Express Typescript**: [go!](https://expressjs-typescript.vercel.app/v1) + `/users`
+
 :balloon: **Demo Deno Server**: [go!](https://expressjs-typescript.vercel.app/v2)
 
 #### Stack
@@ -16,7 +17,7 @@ Template for deploy expressjs server on Vercel with Typescript and Deno
 
 #### 0. Previous
 
-You need Deno installation in your machine. Go to [Denoland](https://deno.land/#installation) page.
+You need Deno installed in your machine. Go to [Denoland](https://deno.land/#installation) page.
 
 #### 1. Install dependencies
 
