@@ -17,7 +17,7 @@ app.use(cors())
 app.use(APP_PREFIX + '/', HelloRouter)
 app.use(APP_PREFIX + '/users', UsersRouter)
 
-app.get('*', (_req, res) => res.redirect('/404'))
+app.get('*', (_req, res) => res.redirect('/'))
 
 // Export to Vercel Serverless
 export default app

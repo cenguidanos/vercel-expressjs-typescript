@@ -8,8 +8,8 @@
 			"runtime": "vercel-deno@0.7.6"
 		}
 	},
-	"redirects": [{ "source": "/", "destination": "/404", "permanent": true }],
 	"rewrites": [
+		{ "source": "/", "destination": "/404" },
 		{ "source": "/v1(.*)", "destination": "/api/v1" },
 		{ "source": "/v2(.*)", "destination": "/api/v2" },
 		{ "source": "/(.*)", "destination": "/404" }
