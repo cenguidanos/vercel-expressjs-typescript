@@ -12,8 +12,4 @@ rand = "0.8.3"
 
 [lib]
 name = "util"
-path = "lib/util.rs"
-
-[[bin]]
-name = "index"
-path = "C:\\Users\\Desarrollo\\Desktop\\Repositorios\\templates\\vercel-expressjs-typescript-deno\\api\\v3\\random\\index.rs"
+path = "_lib/util.rs"

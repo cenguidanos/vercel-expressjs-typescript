@@ -3,8 +3,8 @@ import type { Request, Response } from 'express'
 import helmet from 'helmet'
 import cors from 'cors'
 
-import HelloRouter from './lib/hello/hello.router'
-import UsersRouter from './lib/users/users.router'
+import HelloRouter from './_lib/hello/hello.router'
+import UsersRouter from './_lib/users/users.router'
 
 // App entry point
 const app = express()
